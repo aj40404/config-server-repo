@@ -1,6 +1,9 @@
 server:
   port: ${BOOK_SERVICE_PORT:9001}
 spring:
+  servlet:
+    multipart:
+      max-file-size: 5MB
   datasource:
     url: jdbc:mysql://${SQL_HOST:localhost}:${SQL_PORT:3306}/books_dbnew3?createDatabaseIfNotExist=true
     username: ${SQL_USERNAME:root}

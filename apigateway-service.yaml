@@ -1,5 +1,9 @@
 message: "API Gateway Service"
 
+spring:
+  servlet:
+    multipart:
+      max-file-size: 5MB
 server:
   port: ${GATEWAY_PORT:8090}
 zuul:
