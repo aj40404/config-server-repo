@@ -5,7 +5,7 @@ spring:
     multipart:
       max-file-size: 5MB
   datasource:
-    url: jdbc:mysql://${SQL_HOST:localhost}:${SQL_PORT:3306}/books_dbnew5?createDatabaseIfNotExist=true
+    url: jdbc:mysql://${SQL_HOST:localhost}:${SQL_PORT:3306}/books_dbnew4?createDatabaseIfNotExist=true
     username: ${SQL_USERNAME:root}
     password: ${SQL_PASSWORD:Mysql@123}
     driver-class-name: com.mysql.cj.jdbc.Driver
