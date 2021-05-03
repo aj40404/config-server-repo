@@ -22,5 +22,7 @@ eureka:
     fetch-registry: true
     service-url:
       defaultZone: http://${EUREKA_HOST:localhost}:${EUREKA_PORT:8761}/eureka/
+  instance:
+    preferIpAddress: true    
 
 
