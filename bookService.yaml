@@ -5,13 +5,18 @@ spring:
     multipart:
       max-file-size: 5MB
   datasource:
-    url: jdbc:mysql://${SQL_HOST:localhost}:${SQL_PORT:3306}/books_dbnew5?createDatabaseIfNotExist=true
+    url: jdbc:mysql://${SQL_HOST:localhost}:${SQL_PORT:3306}/books_dbnew?createDatabaseIfNotExist=true
     username: ${SQL_USERNAME:root}
     password: ${SQL_PASSWORD:Mysql@123}
-    driver-class-name: com.mysql.cj.jdbc.Driver
+    driver-class-name: com.mysql.cj.jdbc.Driver  
   jpa:
     hibernate:
       ddl-auto: update
+  data:
+    mongodb:
+      database: userprofile_db
+      port: ${MONGO_PORT:27017}
+      host: ${MONGO_HOST:localhost}    
 
 
 eureka:

@@ -5,12 +5,17 @@ server:
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: ${MYSQL_URL:jdbc:mysql://localhost:3306/books_dbnew5}
+    url: ${MYSQL_URL:jdbc:mysql://localhost:3306/books_dbnew}
     username: ${MYSQL_USER:root}
     password: ${MYSQL_PASSWORD:Mysql@123}
   jpa:
     hibernate:
       ddl-auto: update
+  data:
+    mongodb:
+      database: userprofile_db
+      port: ${MONGO_PORT:27017}
+      host: ${MONGO_HOST:localhost}    
 eureka:
   client:
     register-with-eureka: true
