@@ -3,11 +3,6 @@ jwt:
 server:
   port: ${SERVER_PORT:9007}
 spring:
-  datasource:
-    driver-class-name: com.mysql.cj.jdbc.Driver
-    url: ${MYSQL_URL:jdbc:mysql://localhost:3306/books_dbnew4}
-    username: ${MYSQL_USER:root}
-    password: ${MYSQL_PASSWORD:Mysql@123}
   data:
     mongodb:
       database: books_dbnew
