@@ -9,9 +9,6 @@ spring:
     username: ${SQL_USERNAME:root}
     password: ${SQL_PASSWORD:Mysql@123}
     driver-class-name: com.mysql.cj.jdbc.Driver  
-  jpa:
-    hibernate:
-      ddl-auto: update
   data:
     mongodb:
       database: books_dbnew

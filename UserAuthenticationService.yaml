@@ -8,9 +8,6 @@ spring:
     url: ${MYSQL_URL:jdbc:mysql://localhost:3306/books_dbnew4}
     username: ${MYSQL_USER:root}
     password: ${MYSQL_PASSWORD:Mysql@123}
-  jpa:
-    hibernate:
-      ddl-auto: update
   data:
     mongodb:
       database: books_dbnew
