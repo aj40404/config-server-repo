@@ -3,11 +3,15 @@ jwt:
 server:
   port: ${SERVER_PORT:9007}
 spring:
-  data:
-    mongodb:
-      database: books_dbnew
-      port: ${MONGO_PORT:27017}
-      host: ${MONGO_HOST:localhost}    
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: ${MYSQL_URL:jdbc:mysql://localhost:3306/books_dbnew4}
+    username: ${MYSQL_USER:root}
+    password: ${MYSQL_PASSWORD:Mysql@123}
+  jpa:
+    hibernate:
+      ddl-auto: update
+    
 eureka:
   client:
     register-with-eureka: true
